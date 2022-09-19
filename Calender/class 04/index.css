@@ -1,0 +1,20 @@
+.boxall{
+    width: 640px;
+    height: 480px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    background : green;
+  }
+  .image{
+    width: 400px;
+    height: 480px;
+    margin: 0 auto;
+    background : blue;
+  }
+  img
+  {
+  width: 400px;
+  height: 480px;
+  margin: 0 auto;
+}
