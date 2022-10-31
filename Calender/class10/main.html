@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+    <div id="app">{{ message }}</div>
+    <!-- {}이거 하나는 쓰는 곳이 있다. 하지만 {{}}개는 쓰는 곳이 없다. {{}} 머스테치
+    https://joshua1988.github.io/vue-camp/vue/life-cycle.html 자료 찾아-->
+    <!-- vue프레임웍을 사용한 예시-->
+    <!-- vue장점 돔을 일일이 하면 귀찮다. 버추얼 돔을 만든다. 돔안에 새로운 돔을 만든다 그러면 선능도 좋아진다 그럼 전체 돔을 업데이트 하는것보다 가상의 돔을 업데이트 하는것이 한번 도는것보다 빠르디.-->
+    <!-- -->
+    <script>
+        const{createApp} = Vue;/* 구조분해 할당 */
+
+        createApp({
+            data(){
+                return{
+                    message : "helllow my name is song ha gyue"
+                }
+            }
+        }).mount("#app")/*뷰객체를 생성해서 div에다가 mount(안에 get elemnent By Id가 있음)
+        돔트리에 리턴값을 app에 부착한다.*/
+    </script>
+</body>
+</html>
