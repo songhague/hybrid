@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+ <!-- vue.js 사용이유-->
+  <!-- 우리가 로그인 할때 아이디 패스워드가 있고 그 부분만 바꾸면 된다 근대 옛날에는 페이지를 전부 만들어서 보내줌 그래서 부하가 컸음
+근대 아이디 비번만 주고 맞느지 아닌지 하면 전에 꺼보다 부하가 적음 처음에 첫페이지는 느리지만 다 다운 받아지면 더 빨라진다.-->
+ <!-- 유니티 스크립트가 vue
+ 유니티 신 = html-->
+    <script src="https://unpkg.com/vue@3"></script>
+    <div id="app">
+        <button @click="loveCount++;">고백하기</button>
+        <p>{{boy}}가 {{girl}}에게 <b v-html="style"></b>했다가...... {{loveCount}}번 차였다.</p>
+    </div>
+    <div id="app2">
+        <button @click="loveCount++;">고백하기</button>
+        <p>{{boy}}가 {{girl}}에게 <b v-html="style"></b>했다가...... {{loveCount}}번 차였다.</p>
+    </div>
+    
+    <script>
+        const {createApp} = Vue;//vue에서 객체 1개를 빼옴
+        createApp({
+           data(){
+            return{
+                boy:"택민이",
+                girl:"하규",
+                loveCount: 0,//js형태 리턴
+                style:"<span style=color:red;>고백</span>"
+             }
+          },
+          mounted(){
+            console.log("마운티드 했다");
+          }
+        }).mount("#app")
+        createApp({
+           data(){
+            return{
+                boy:"앙",
+                girl:"하규",
+                loveCount: 0,//js형태 리턴
+                style:"<span style=color:red;>고백</span>"
+             }
+          },
+          mounted(){
+            console.log("마운티드 했다");
+          }
+        }).mount("#app2")
+    </script>
+
+
+</body>
+</html>
