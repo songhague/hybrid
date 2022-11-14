@@ -1,0 +1,23 @@
+.total
+{
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    border: 1px solid black;
+    float: left;
+}
+.total2
+{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    float: left;
+}
+.total3
+{
+    width: 98px;
+    height: 98px;
+    background-color: blue;
+    border: 1px solid black;
+    float: left;
+}

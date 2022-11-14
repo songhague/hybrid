@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="stylee.css">
+    <div id="app">
+        <div class="bg_block" v-for = "block in count">{{block}}</div>
+    </div>
+     <!-- vue 객체 자체가 컴퍼넌트여서 하나씩 가져와서 출력한다. 그걸 v for가 해준다.
+          v for는 있는 태그를 반복한다.
+          반복문 1번씩 실행할때마다 block에 출력해라
+        block in count
+    count에 있는 값을 block에 넣는것을 16번을 반복한다.-->
+    <script>
+        const {createApp} = Vue;//vue에서 객체 1개를 빼옴
+        createApp({
+           data(){
+            return{
+                count : 16,
+             }
+          },
+        }).mount("#app")
+    </script>
+</body>
+</html>
