@@ -1,0 +1,38 @@
+#app
+{
+    position: relative;
+    width: 580px;
+    height: 580px;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    /*레이아웃 있는 이유 규칙을 만들기 위해서*/
+}
+.bg_block
+{
+    background-color: burlywood;
+    text-align: center;
+}
+.bg_blockK
+{
+    background-color: green;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+#app2
+{
+    position: absolute;
+    width: 580px;
+    height: 580px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}

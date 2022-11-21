@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script src="main.js"></script>
 <body>
     <script src="https://unpkg.com/vue@3"></script>
     <link rel="stylesheet" href="stylee.css">
     <div id="app">
         <div class="bg_block" v-for = "block in count">{{block}}</div>
+        <div id="app2">
+            <div class="bg_blockK"  v-for = "block in countt">{{countT}}</div>
+        </div>
     </div>
      <!-- vue 객체 자체가 컴퍼넌트여서 하나씩 가져와서 출력한다. 그걸 v for가 해준다.
           v for는 있는 태그를 반복한다.
@@ -22,10 +26,13 @@
         createApp({
            data(){
             return{
-                count : 16,
+                count : 16,/*app박스 개수*/
+                countT : 3,/*네모 숫자*/
+                countt : 5,/*app2박스 개수*/
              }
           },
         }).mount("#app")
+        
     </script>
 </body>
 </html>
