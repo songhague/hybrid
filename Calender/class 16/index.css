@@ -1,4 +1,5 @@
-#app{
+#app
+{
     position: absolute;
     width:590px;
     height:590px;     
@@ -7,9 +8,9 @@
 {
     position: relative;
     width:590px;
-    height:650px;    
+    height:650px;
     background-color: azure;
-    display: black;
+    display: block;
     text-align: center;
 }
 #endd
@@ -30,7 +31,13 @@
     display: none;
     text-align: center;
 }
-.game {
+#img
+{
+    width: 516px;
+    height: 389px;
+}
+.game
+{
     background: transparent;
     border: 1px solid #d6ced6;
     display:inline-block;
